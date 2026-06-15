@@ -1,39 +1,67 @@
 # Threedii Paint Studio — Case Study
 
-> **Studio for hand-painted, 3D-printed collectible figures** · e-commerce storefront + lead funnel.
-> 🌐 Live: **https://threedii-paint-studio.vercel.app** · 📍 Colombia
+> **Hand-painted, 3D-printed collectible figures** · e-commerce storefront + WhatsApp lead funnel.
+> 🌐 **Live:** https://threedii-paint-studio.vercel.app  ·  📍 Colombia
 
-<p align="center"><img src="docs/home.jpg" alt="Threedii Paint Studio" width="880"></p>
+<p align="center"><img src="docs/home.jpg" alt="Threedii Paint Studio — homepage" width="900"></p>
 
 | | |
 |---|---|
 | **Role** | Solo front-end developer (freelance) |
 | **Client** | Threedii — hand-painted, 3D-printed collectible figures |
+| **Industry** | E-commerce · collectibles / made-to-order |
 | **Stack** | React 19 · Vite 8 · React Router · Playwright · Lighthouse CI · Vercel |
 | **Status** | Live in production |
 
 ---
 
-## The client
-Threedii is a Colombian studio that **designs, 3D-prints and hand-paints high-detail collectible figures** of characters from films, comics, video games and anime. Each piece is made to order in SLA resin or FDM + resin, airbrushed in multiple layers, **18–50 cm tall**, with ~3–6 week lead times — some with removable, interchangeable parts. The site is their storefront and lead funnel.
+## Overview
+Threedii is a Colombian studio that turns characters from films, games, comics and anime into **museum-grade collectible figures** — designed, 3D-printed and hand-painted to order. They needed a storefront that feels as premium as the product and turns visitors into real order conversations. I built the whole front-end solo.
 
-## What the site does
-A fast single-page storefront built to turn browsing into orders.
+## The client & the craft
+Every Threedii piece is **made to order**:
+- **Printed** in SLA resin or FDM + resin,
+- **Hand-finished** with multi-layer airbrushing (plus NMM, OSL and washes for metallics, glows and depth),
+- **18–50 cm tall**, some with **removable, interchangeable parts** (jaws, tongues, weapons),
+- **~3–6 week** lead times per figure.
 
-- **Hero** — bold brand intro and positioning.
-- **Catalog** — a **bento-grid gallery** of the line-up, filterable by category: **Bustos · Películas · Cómics · Videojuegos · Anime**. Figures include **Némesis** (Resident Evil), **Venom**, **Xenomorph** (Alien), **Predator vs Dutch**, **RoboCop**, **Spartan** (Halo), **Indoraptor** (Jurassic World), **Jafar** (Aladdin), and **Broly / Cell / Majin Boo** (Dragon Ball).
-- **Figure detail** — each opens a view with its universe, description, specs (material, finish, height, lead time) and, where available, an Instagram clip of the real piece.
-- **Quote flow ("Cotizar")** — picking a figure prefills a request and opens a **pre-written WhatsApp message**, converting interest straight into a conversation.
-- **Process / behind-the-scenes** — how the figures are made.
+So the site isn't a "buy now" cart — it's a **catalog + quote funnel** that has to communicate craftsmanship and make it effortless to start a custom order.
 
-## Screenshot
-<p align="center"><img src="docs/full.jpg" alt="Full catalog page" width="620"></p>
+## The catalog
+Figures are organised by category — **Bustos · Películas · Cómics · Videojuegos · Anime** — each with its own universe, description and specs:
 
-## Engineering highlights
-- **Performance-first SPA** — build-time responsive images (`sharp`, 400/800/1200w `srcset`), scroll-reveal animations and a desktop custom cursor; Lighthouse budgets enforced in CI.
-- **Lead generation** — the figure → WhatsApp quote flow.
-- **SEO** — structured data, Open Graph / Twitter cards, an auto-generated sitemap and a `<noscript>` fallback.
-- **Quality** — security headers and a Playwright + Lighthouse CI pipeline gating every change.
+| Figure | Universe | Category |
+|---|---|---|
+| Némesis | Resident Evil | Games |
+| Spartan | Halo | Games |
+| Xenomorfo | Alien | Movies |
+| Predator vs Dutch | Predator | Movies |
+| RoboCop | RoboCop | Movies |
+| Indoraptor | Jurassic World | Movies |
+| Jafar | Aladdin (Disney) | Movies |
+| Marciano | Mars Attacks! | Movies |
+| Bane | Batman (DC) | Comics |
+| Venom | Spider-Man (Marvel) | Comics |
+| Broly · Cell · Majin Boo | Dragon Ball | Anime / Busts |
+
+## What the site includes
+A fast single-page storefront engineered to convert browsing into orders:
+- **Hero** — bold brand intro with a clear "Pedir figura" call to action.
+- **Catalog** — a **bento-grid gallery** with category filters and **hover image cycling**; clicking a figure opens a **detail view** with its universe, description and specs (material, finish, height, lead time), plus an **Instagram clip** of the real painted piece where available.
+- **Quote flow ("Cotizar")** — selecting a figure **prefills a request and opens a pre-written WhatsApp message**, so interest converts straight into a conversation (the studio's main sales channel).
+- **Process & "Mira cómo lo hacemos"** — sections showing how the figures are designed, printed and painted.
+
+## Screenshots
+<p align="center"><img src="docs/full.jpg" alt="Full storefront — catalog, process and behind-the-scenes" width="640"></p>
+
+## What I delivered (engineering)
+- **Performance-first SPA** — build-time responsive images (`sharp`, 400 / 800 / 1200w `srcset`), scroll-reveal animations, and a desktop custom cursor.
+- **Lead generation** — the figure → WhatsApp quote flow that turns the catalog into sales conversations.
+- **SEO** — rich structured data (Organization, Service, ItemList), Open Graph / Twitter cards, an auto-generated sitemap and a `<noscript>` fallback for AI crawlers.
+- **Hardened & measured** — a strict Content-Security-Policy and security headers, with a **Playwright + Lighthouse CI** pipeline enforcing performance, SEO and security budgets on every change.
+
+## Tech stack
+React 19 · Vite 8 · React Router v7 · component-scoped CSS · `sharp` · Playwright · Lighthouse CI · Vercel.
 
 ---
 
