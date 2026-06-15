@@ -1,8 +1,7 @@
 # Case Study — Threedii Paint Studio
 
 > Web storefront for a studio that 3D-prints and hand-paints collectible figures.
-> **Live:** https://threedii.com
-
+> **Live:** https://threedii-paint-studio.vercel.app
 <p align="center"><img src="docs/hero.png" alt="Threedii Paint Studio" width="760"></p>
 
 | | |
