@@ -1,34 +1,40 @@
-# Case Study — Threedii Paint Studio
+# Threedii Paint Studio — Case Study
 
-> Web storefront for a studio that 3D-prints and hand-paints collectible figures.
-> **Live:** https://threedii-paint-studio.vercel.app
-<p align="center"><img src="docs/hero.png" alt="Threedii Paint Studio" width="760"></p>
+> **Studio for hand-painted, 3D-printed collectible figures** · e-commerce storefront + lead funnel.
+> 🌐 Live: **https://threedii-paint-studio.vercel.app** · 📍 Colombia
+
+<p align="center"><img src="docs/home.jpg" alt="Threedii Paint Studio" width="880"></p>
 
 | | |
 |---|---|
 | **Role** | Solo front-end developer (freelance) |
-| **Client** | Threedii — hand-painted 3D-printed collectible figures · Colombia |
+| **Client** | Threedii — hand-painted, 3D-printed collectible figures |
 | **Stack** | React 19 · Vite 8 · React Router · Playwright · Lighthouse CI · Vercel |
-| **Status** | In production |
+| **Status** | Live in production |
 
 ---
 
-## Problem
-Threedii needed a fast, striking storefront to present its catalog of hand-painted figures (from games, films, comics and anime) and turn interest into orders — with strong performance and SEO.
+## The client
+Threedii is a Colombian studio that **designs, 3D-prints and hand-paints high-detail collectible figures** of characters from films, comics, video games and anime. Each piece is made to order in SLA resin or FDM + resin, airbrushed in multiple layers, **18–50 cm tall**, with ~3–6 week lead times — some with removable, interchangeable parts. The site is their storefront and lead funnel.
 
-## What I built
-- **Filterable catalog** — a bento-grid gallery with multi-category tags, hover image cycling and a per-figure detail view.
-- **Quote flow ("Cotizar")** — selecting a figure prefills a request and opens a pre-written WhatsApp message, turning browsing into leads.
-- **Performance-first build** — build-time responsive images (`sharp`, 400/800/1200w `srcset`), scroll-reveal animations and a desktop custom cursor.
-- **SEO ready** — structured data, Open Graph / Twitter cards, an auto-generated sitemap and a `<noscript>` fallback.
+## What the site does
+A fast single-page storefront built to turn browsing into orders.
 
-## Results
-- Production site on Vercel, with CI (lint/build, security checks and Lighthouse budgets) gating every change.
-- Polished, responsive UX with reduced-motion support.
+- **Hero** — bold brand intro and positioning.
+- **Catalog** — a **bento-grid gallery** of the line-up, filterable by category: **Bustos · Películas · Cómics · Videojuegos · Anime**. Figures include **Némesis** (Resident Evil), **Venom**, **Xenomorph** (Alien), **Predator vs Dutch**, **RoboCop**, **Spartan** (Halo), **Indoraptor** (Jurassic World), **Jafar** (Aladdin), and **Broly / Cell / Majin Boo** (Dragon Ball).
+- **Figure detail** — each opens a view with its universe, description, specs (material, finish, height, lead time) and, where available, an Instagram clip of the real piece.
+- **Quote flow ("Cotizar")** — picking a figure prefills a request and opens a **pre-written WhatsApp message**, converting interest straight into a conversation.
+- **Process / behind-the-scenes** — how the figures are made.
 
-## Gallery
-<p align="center"><img src="docs/figure.webp" alt="Collectible figure" width="360"></p>
+## Screenshot
+<p align="center"><img src="docs/full.jpg" alt="Full catalog page" width="620"></p>
+
+## Engineering highlights
+- **Performance-first SPA** — build-time responsive images (`sharp`, 400/800/1200w `srcset`), scroll-reveal animations and a desktop custom cursor; Lighthouse budgets enforced in CI.
+- **Lead generation** — the figure → WhatsApp quote flow.
+- **SEO** — structured data, Open Graph / Twitter cards, an auto-generated sitemap and a `<noscript>` fallback.
+- **Quality** — security headers and a Playwright + Lighthouse CI pipeline gating every change.
 
 ---
 
-<sub>Code is proprietary to Threedii — this repository documents my work for portfolio purposes. Built by <a href="https://github.com/johnvergel-dev">John Vergel</a>.</sub>
+<sub>Code is proprietary to Threedii; this repository documents my work for portfolio purposes. Built by <a href="https://github.com/johnvergel-dev">John Vergel</a>.</sub>
